@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  SwiftUIDesigns
 //
-//  Created by darktech4 on 27/05/2024.
+//  Created by xqsadness on 27/05/2024.
 //
 
 import SwiftUI
@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack{
-            
+            ImageGalleryView()
         }
     }
 }

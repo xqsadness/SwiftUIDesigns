@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DDDEE80A2C0469F6006D0D4A /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDEE8092C0469F6006D0D4A /* DataModel.swift */; };
+		DDDEE80D2C047043006D0D4A /* ImageStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDEE80C2C047043006D0D4A /* ImageStack.swift */; };
+		DDDEE80F2C047064006D0D4A /* SelectedStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDEE80E2C047064006D0D4A /* SelectedStack.swift */; };
 		DDDFD2ED2C041F560072FFD0 /* SwiftUIDesignsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFD2EC2C041F560072FFD0 /* SwiftUIDesignsApp.swift */; };
 		DDDFD2EF2C041F560072FFD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFD2EE2C041F560072FFD0 /* ContentView.swift */; };
 		DDDFD2F32C041F580072FFD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDDFD2F22C041F580072FFD0 /* Assets.xcassets */; };
 		DDDFD2F62C041F580072FFD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDDFD2F52C041F580072FFD0 /* Preview Assets.xcassets */; };
+		DDDFD3012C0421180072FFD0 /* ImageGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFD3002C0421180072FFD0 /* ImageGalleryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DDDEE8092C0469F6006D0D4A /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		DDDEE80C2C047043006D0D4A /* ImageStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStack.swift; sourceTree = "<group>"; };
+		DDDEE80E2C047064006D0D4A /* SelectedStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedStack.swift; sourceTree = "<group>"; };
 		DDDFD2E92C041F560072FFD0 /* SwiftUIDesigns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDesigns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDDFD2EC2C041F560072FFD0 /* SwiftUIDesignsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDesignsApp.swift; sourceTree = "<group>"; };
 		DDDFD2EE2C041F560072FFD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DDDFD2F22C041F580072FFD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDDFD2F52C041F580072FFD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DDDFD3002C0421180072FFD0 /* ImageGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGalleryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +40,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DDDEE8062C0469D1006D0D4A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DDDEE8092C0469F6006D0D4A /* DataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DDDEE8072C0469DD006D0D4A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DDDEE80B2C0469FA006D0D4A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DDDFD3002C0421180072FFD0 /* ImageGalleryView.swift */,
+				DDDEE80C2C047043006D0D4A /* ImageStack.swift */,
+				DDDEE80E2C047064006D0D4A /* SelectedStack.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DDDFD2E02C041F560072FFD0 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +84,9 @@
 		DDDFD2EB2C041F560072FFD0 /* SwiftUIDesigns */ = {
 			isa = PBXGroup;
 			children = (
-				DDDFD2EC2C041F560072FFD0 /* SwiftUIDesignsApp.swift */,
-				DDDFD2EE2C041F560072FFD0 /* ContentView.swift */,
 				DDDFD2F22C041F580072FFD0 /* Assets.xcassets */,
+				DDDFD2FF2C0420FC0072FFD0 /* App */,
+				DDDFD2FD2C0420EA0072FFD0 /* Core */,
 				DDDFD2F42C041F580072FFD0 /* Preview Content */,
 			);
 			path = SwiftUIDesigns;
@@ -65,6 +98,41 @@
 				DDDFD2F52C041F580072FFD0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DDDFD2FC2C0420DD0072FFD0 /* ImageGalleryApp */ = {
+			isa = PBXGroup;
+			children = (
+				DDDEE8072C0469DD006D0D4A /* ViewModels */,
+				DDDEE8062C0469D1006D0D4A /* Models */,
+				DDDEE80B2C0469FA006D0D4A /* Views */,
+			);
+			path = ImageGalleryApp;
+			sourceTree = "<group>";
+		};
+		DDDFD2FD2C0420EA0072FFD0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DDDFD2FE2C0420F60072FFD0 /* Root */,
+				DDDFD2FC2C0420DD0072FFD0 /* ImageGalleryApp */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DDDFD2FE2C0420F60072FFD0 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				DDDFD2EE2C041F560072FFD0 /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		DDDFD2FF2C0420FC0072FFD0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DDDFD2EC2C041F560072FFD0 /* SwiftUIDesignsApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +205,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDDFD3012C0421180072FFD0 /* ImageGalleryView.swift in Sources */,
+				DDDEE80D2C047043006D0D4A /* ImageStack.swift in Sources */,
 				DDDFD2EF2C041F560072FFD0 /* ContentView.swift in Sources */,
+				DDDEE80F2C047064006D0D4A /* SelectedStack.swift in Sources */,
 				DDDFD2ED2C041F560072FFD0 /* SwiftUIDesignsApp.swift in Sources */,
+				DDDEE80A2C0469F6006D0D4A /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +344,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIDesigns/Preview Content\"";
+				DEVELOPMENT_TEAM = 4BB9BFSL47;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -300,6 +373,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIDesigns/Preview Content\"";
+				DEVELOPMENT_TEAM = 4BB9BFSL47;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
