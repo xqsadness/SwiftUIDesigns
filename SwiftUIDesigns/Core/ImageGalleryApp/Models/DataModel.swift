@@ -10,7 +10,7 @@ import SwiftUI
 struct Photo: Identifiable {
     var id = UUID()
     var clipID = UUID()
-    var imageName: String
+    var imageName: UIImage
 }
 
 struct Album: Identifiable {
@@ -26,34 +26,34 @@ class DataModel{
     var isSheetPresented = false
     var albums: [Album] = [
         Album(images: [
-            Photo(imageName: "ig1"),
-            Photo(imageName: "ig2"),
-            Photo(imageName: "ig3"),
-            Photo(imageName: "ig4"),
+            Photo(imageName: UIImage(named: "ig1")!),
+            Photo(imageName: UIImage(named: "ig2")!),
+            Photo(imageName: UIImage(named: "ig3")!),
+            Photo(imageName: UIImage(named: "ig4")!)
         ]),
         Album(images: [
-            Photo(imageName: "ig5"),
-            Photo(imageName: "ig6"),
-            Photo(imageName: "ig7"),
-            Photo(imageName: "ig8"),
+            Photo(imageName: UIImage(named: "ig5")!),
+            Photo(imageName: UIImage(named: "ig6")!),
+            Photo(imageName: UIImage(named: "ig7")!),
+            Photo(imageName: UIImage(named: "ig8")!)
         ]),
         Album(images: [
-            Photo(imageName: "ig9"),
-            Photo(imageName: "ig10"),
-            Photo(imageName: "ig11")
+            Photo(imageName: UIImage(named: "ig9")!),
+            Photo(imageName: UIImage(named: "ig10")!),
+            Photo(imageName: UIImage(named: "ig11")!)
         ]),
         Album(images: [
-            Photo(imageName: "ig12"),
-            Photo(imageName: "ig13"),
-            Photo(imageName: "ig7"),
-            Photo(imageName: "ig5"),
+            Photo(imageName: UIImage(named: "ig12")!),
+            Photo(imageName: UIImage(named: "ig13")!),
+            Photo(imageName: UIImage(named: "ig7")!),
+            Photo(imageName: UIImage(named: "ig5")!)
         ]),
         Album(images: [
-            Photo(imageName: "ig10"),
-            Photo(imageName: "ig12"),
-            Photo(imageName: "ig7"),
-            Photo(imageName: "ig9"),
-            Photo(imageName: "ig2")
+            Photo(imageName: UIImage(named: "ig10")!),
+            Photo(imageName: UIImage(named: "ig12")!),
+            Photo(imageName: UIImage(named: "ig7")!),
+            Photo(imageName: UIImage(named: "ig9")!),
+            Photo(imageName: UIImage(named: "ig2")!)
         ])
     ]
 }

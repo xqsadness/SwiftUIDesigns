@@ -15,7 +15,7 @@ struct ImageStack: View {
     var body: some View {
         ZStack{
             ForEach(Array(images.enumerated().suffix(4)), id: \.element.id){ index, image in
-                Image(image.imageName)
+                Image(uiImage: image.imageName)
                     .resizable()
                     .scaledToFill()
                     .matchedGeometryEffect(id: image.id, in: namespace)

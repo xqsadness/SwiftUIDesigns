@@ -9,17 +9,22 @@ import SwiftUI
 
 struct SelectedStack: View {
     
-    var vm: DataModel
+    @State var vm: DataModel
+    @Binding var idAlbum: UUID
     var images: [Photo]
     var namespace: Namespace.ID
+    
     @State private var selectedImage: Photo?
+    @State private var show: Bool = false
+    @State private var uiImage: UIImage? = nil
+    @State private var isImagePickerPresented = false
     
     var body: some View {
         ZStack{
             ScrollView{
                 LazyVGrid(columns: Array(repeating: GridItem(), count: 2)){
                     ForEach(images){ image in
-                        Image(image.imageName)
+                        Image(uiImage: image.imageName)
                             .resizable()
                             .scaledToFill()
                             .matchedGeometryEffect(id: image.id, in: namespace)
@@ -35,6 +40,7 @@ struct SelectedStack: View {
                     }
                 }
             }
+            .scrollIndicators(.hidden)
             .safeAreaPadding(.top, 60)
             .safeAreaPadding(.horizontal, 15)
             .overlay(alignment: .topLeading){
@@ -44,12 +50,12 @@ struct SelectedStack: View {
             if let selectedImage{
                 ZStack{
                     GeometryReader{ geo in
-                        Image(selectedImage.imageName)
+                        Image(uiImage: selectedImage.imageName)
                             .resizable()
                             .scaledToFill()
                             .matchedGeometryEffect(id: selectedImage.id, in: namespace)
                             .frame(width: geo.size.width, height: geo.size.height)
-                            .onTapGesture {
+                            .onTapGesture(count: 1){
                                 withAnimation(.linear(duration: 0.1)) {
                                     self.selectedImage = nil
                                 }
@@ -57,26 +63,78 @@ struct SelectedStack: View {
                     }
                 }
                 .ignoresSafeArea()
+                .overlay {
+                    LikePhoto(show: $show)
+                }
+                .overlay(alignment: .topTrailing){
+                    Button{
+                        show = true
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5){
+                            show = false
+                        }
+                    }label: {
+                        Image(systemName: "heart.fill")
+                            .padding()
+                            .background(.ultraThinMaterial, in: Circle())
+                    }
+                    .tint(.primary)
+                    .padding(.horizontal)
+                }
             }
         }
     }
     
     var DismissButton: some View{
-        Button{
-            withAnimation(.spring(duration: 0.3, bounce: 0.3)){
-                vm.isSheetPresented = false
+        HStack{
+            Button{
+                withAnimation(.spring(duration: 0.3, bounce: 0.3)){
+                    vm.isSheetPresented = false
+                }
+            }label: {
+                Image(systemName: "arrow.backward")
+                    .padding()
+                    .background(.ultraThinMaterial, in: Circle())
             }
-        }label: {
-            Image(systemName: "arrow.backward")
-                .padding()
-                .background(.ultraThinMaterial, in: Circle())
+            .tint(.primary)
+            
+            Spacer()
+            
+            Button{
+                isImagePickerPresented = true
+            }label: {
+                Image(systemName: "plus")
+                    .padding()
+                    .background(.ultraThinMaterial, in: Circle())
+            }
+            .tint(.primary)
+            .sheet(isPresented: $isImagePickerPresented) {
+                ImagePicker(onImagePicked: { image in
+                    if let uiImage = image{
+                        withAnimation(.smooth(duration: 0.3)) {
+                            if let atAlbum = vm.albums.firstIndex(where: { $0.id == idAlbum }){
+                                vm.albums[atAlbum].images.append(.init(imageName: uiImage))
+                                vm.selectedImages?.append(.init(imageName: uiImage))
+                            }
+                        }
+                    }
+                })
+            }
         }
-        .tint(.primary)
         .padding()
         .offset(y: -20)
     }
 }
 
-//#Preview {
-//    SelectedStack()
-//}
+struct LikePhoto: View {
+    @Binding var show: Bool
+    var body: some View {
+        Image(systemName: "heart.fill").font(.system(size: 50))
+            .foregroundStyle(.red)
+            .scaleEffect(show ? 2 : 0)
+            .animation(.easeIn(duration: 0.5), value: show)
+    }
+}
+
+#Preview {
+    ImageGalleryView()
+}

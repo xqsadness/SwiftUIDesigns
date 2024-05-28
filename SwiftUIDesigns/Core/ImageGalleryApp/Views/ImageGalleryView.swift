@@ -10,6 +10,7 @@ import SwiftUI
 struct ImageGalleryView: View {
     
     @State var vm = DataModel()
+    @State var idAlbum: UUID = .init()
     @Namespace var namespace
     
     var body: some View {
@@ -21,6 +22,7 @@ struct ImageGalleryView: View {
                             .onTapGesture {
                                 withAnimation(.smooth(duration: 0.3)){
                                     self.vm.selectedImages = album.images
+                                    self.idAlbum = album.id
                                     self.vm.isSheetPresented = true
                                 }
                             }
@@ -31,7 +33,7 @@ struct ImageGalleryView: View {
             }
         }else{
             if let image = vm.selectedImages{
-                SelectedStack(vm: vm, images: image, namespace: namespace)
+                SelectedStack(vm: vm, idAlbum: $idAlbum, images: image, namespace: namespace)
             }
         }
     }

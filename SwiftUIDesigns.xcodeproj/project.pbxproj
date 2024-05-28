@@ -10,6 +10,7 @@
 		DDDEE80A2C0469F6006D0D4A /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDEE8092C0469F6006D0D4A /* DataModel.swift */; };
 		DDDEE80D2C047043006D0D4A /* ImageStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDEE80C2C047043006D0D4A /* ImageStack.swift */; };
 		DDDEE80F2C047064006D0D4A /* SelectedStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDEE80E2C047064006D0D4A /* SelectedStack.swift */; };
+		DDDEE8122C0493F4006D0D4A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDEE8112C0493F4006D0D4A /* ImagePicker.swift */; };
 		DDDFD2ED2C041F560072FFD0 /* SwiftUIDesignsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFD2EC2C041F560072FFD0 /* SwiftUIDesignsApp.swift */; };
 		DDDFD2EF2C041F560072FFD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFD2EE2C041F560072FFD0 /* ContentView.swift */; };
 		DDDFD2F32C041F580072FFD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDDFD2F22C041F580072FFD0 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		DDDEE8092C0469F6006D0D4A /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		DDDEE80C2C047043006D0D4A /* ImageStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStack.swift; sourceTree = "<group>"; };
 		DDDEE80E2C047064006D0D4A /* SelectedStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedStack.swift; sourceTree = "<group>"; };
+		DDDEE8112C0493F4006D0D4A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		DDDFD2E92C041F560072FFD0 /* SwiftUIDesigns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDesigns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDDFD2EC2C041F560072FFD0 /* SwiftUIDesignsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDesignsApp.swift; sourceTree = "<group>"; };
 		DDDFD2EE2C041F560072FFD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +67,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		DDDEE8102C0493E9006D0D4A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DDDEE8112C0493F4006D0D4A /* ImagePicker.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		DDDFD2E02C041F560072FFD0 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 		DDDFD2FC2C0420DD0072FFD0 /* ImageGalleryApp */ = {
 			isa = PBXGroup;
 			children = (
+				DDDEE8102C0493E9006D0D4A /* Helpers */,
 				DDDEE8072C0469DD006D0D4A /* ViewModels */,
 				DDDEE8062C0469D1006D0D4A /* Models */,
 				DDDEE80B2C0469FA006D0D4A /* Views */,
@@ -208,6 +219,7 @@
 				DDDFD3012C0421180072FFD0 /* ImageGalleryView.swift in Sources */,
 				DDDEE80D2C047043006D0D4A /* ImageStack.swift in Sources */,
 				DDDFD2EF2C041F560072FFD0 /* ContentView.swift in Sources */,
+				DDDEE8122C0493F4006D0D4A /* ImagePicker.swift in Sources */,
 				DDDEE80F2C047064006D0D4A /* SelectedStack.swift in Sources */,
 				DDDFD2ED2C041F560072FFD0 /* SwiftUIDesignsApp.swift in Sources */,
 				DDDEE80A2C0469F6006D0D4A /* DataModel.swift in Sources */,
