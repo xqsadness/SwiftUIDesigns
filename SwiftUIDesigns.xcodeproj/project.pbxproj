@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD46ED512C056955009D4CF7 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46ED502C056955009D4CF7 /* LaunchScreenView.swift */; };
 		DDDEE80A2C0469F6006D0D4A /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDEE8092C0469F6006D0D4A /* DataModel.swift */; };
 		DDDEE80D2C047043006D0D4A /* ImageStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDEE80C2C047043006D0D4A /* ImageStack.swift */; };
 		DDDEE80F2C047064006D0D4A /* SelectedStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDEE80E2C047064006D0D4A /* SelectedStack.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD46ED502C056955009D4CF7 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		DDDEE8092C0469F6006D0D4A /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		DDDEE80C2C047043006D0D4A /* ImageStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStack.swift; sourceTree = "<group>"; };
 		DDDEE80E2C047064006D0D4A /* SelectedStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedStack.swift; sourceTree = "<group>"; };
@@ -42,6 +44,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD46ED4F2C05692E009D4CF7 /* LaunchScreenText */ = {
+			isa = PBXGroup;
+			children = (
+				DD46ED502C056955009D4CF7 /* LaunchScreenView.swift */,
+			);
+			path = LaunchScreenText;
+			sourceTree = "<group>";
+		};
 		DDDEE8062C0469D1006D0D4A /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				DDDFD2FE2C0420F60072FFD0 /* Root */,
+				DD46ED4F2C05692E009D4CF7 /* LaunchScreenText */,
 				DDDFD2FC2C0420DD0072FFD0 /* ImageGalleryApp */,
 			);
 			path = Core;
@@ -223,6 +234,7 @@
 				DDDEE80F2C047064006D0D4A /* SelectedStack.swift in Sources */,
 				DDDFD2ED2C041F560072FFD0 /* SwiftUIDesignsApp.swift in Sources */,
 				DDDEE80A2C0469F6006D0D4A /* DataModel.swift in Sources */,
+				DD46ED512C056955009D4CF7 /* LaunchScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
