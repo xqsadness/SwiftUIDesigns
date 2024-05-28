@@ -56,7 +56,7 @@ struct SelectedStack: View {
                             .matchedGeometryEffect(id: selectedImage.id, in: namespace)
                             .frame(width: geo.size.width, height: geo.size.height)
                             .onTapGesture(count: 1){
-                                withAnimation(.linear(duration: 0.1)) {
+                                withAnimation(.linear(duration: 0.2)) {
                                     self.selectedImage = nil
                                 }
                             }
