@@ -9,12 +9,21 @@ import SwiftUI
 
 struct ImageGalleryView: View {
     
+    @Environment(\.dismiss) var dismiss
     @State var vm = DataModel()
     @State var idAlbum: UUID = .init()
     @Namespace var namespace
     
     var body: some View {
         if !vm.isSheetPresented{
+            Text("Back")
+                .bold()
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.leading)
+                .onTapGesture {
+                    dismiss()
+                }
+            
             ScrollView{
                 LazyVGrid(columns: Array(repeating: GridItem(), count: 2)){
                     ForEach(vm.albums){ album in

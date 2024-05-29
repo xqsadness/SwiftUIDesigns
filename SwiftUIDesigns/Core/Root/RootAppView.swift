@@ -15,6 +15,7 @@ struct RootAppView: View {
     var body: some View {
         if FIRST_LOAD_APP {
             OnboardingView()
+                .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
         }else{
             ZStack{
                 if show{
@@ -24,7 +25,6 @@ struct RootAppView: View {
                         .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
                 }
             }
-            .animation(.smooth, value: FIRST_LOAD_APP)
             .onAppear{
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.7){
                     withAnimation {
