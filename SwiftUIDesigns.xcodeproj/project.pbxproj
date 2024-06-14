@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD2B0F532C1BEACF005C6BAA /* PixelsImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2B0F522C1BEACF005C6BAA /* PixelsImage.swift */; };
 		DD46ED512C056955009D4CF7 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46ED502C056955009D4CF7 /* LaunchScreenView.swift */; };
 		DD46ED532C058D0C009D4CF7 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46ED522C058D0C009D4CF7 /* OnboardingView.swift */; };
 		DD6FEB662C06C25700B7D5E4 /* PhotosAppTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6FEB652C06C25700B7D5E4 /* PhotosAppTransitionView.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD2B0F522C1BEACF005C6BAA /* PixelsImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelsImage.swift; sourceTree = "<group>"; };
 		DD46ED502C056955009D4CF7 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		DD46ED522C058D0C009D4CF7 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		DD6FEB652C06C25700B7D5E4 /* PhotosAppTransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosAppTransitionView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD2B0F4F2C1BEA8E005C6BAA /* PixelArtImage */ = {
+			isa = PBXGroup;
+			children = (
+				DD2B0F522C1BEACF005C6BAA /* PixelsImage.swift */,
+			);
+			path = PixelArtImage;
+			sourceTree = "<group>";
+		};
 		DD46ED4F2C05692E009D4CF7 /* LaunchScreenText */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				DDDFD2FE2C0420F60072FFD0 /* Root */,
+				DD2B0F4F2C1BEA8E005C6BAA /* PixelArtImage */,
 				DD46ED4F2C05692E009D4CF7 /* LaunchScreenText */,
 				DDDFD2FC2C0420DD0072FFD0 /* ImageGalleryApp */,
 				DD6FEB642C06C23F00B7D5E4 /* PhotosAppTransition */,
@@ -310,6 +321,7 @@
 				DDDFD2ED2C041F560072FFD0 /* SwiftUIDesignsApp.swift in Sources */,
 				DDDEE80A2C0469F6006D0D4A /* DataModel.swift in Sources */,
 				DD46ED512C056955009D4CF7 /* LaunchScreenView.swift in Sources */,
+				DD2B0F532C1BEACF005C6BAA /* PixelsImage.swift in Sources */,
 				DD6FEB732C06CA7200B7D5E4 /* HeroKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,6 +459,7 @@
 				DEVELOPMENT_TEAM = 4BB9BFSL47;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need your permission to save images to your photos";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need permission";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -477,6 +490,7 @@
 				DEVELOPMENT_TEAM = 4BB9BFSL47;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need your permission to save images to your photos";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need permission";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

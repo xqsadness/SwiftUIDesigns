@@ -17,6 +17,10 @@ struct ContentView: View {
                 
                 navigationScreen("Image Gallery") {
                     ImageGalleryView()
+                }  
+                
+                navigationScreen("Pixels Art Image") {
+                    PixelsImage()
                 }
             }
         }
