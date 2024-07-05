@@ -12,3 +12,9 @@ https://github.com/xqsadness/SwiftUIDesigns/assets/81242756/cdf4dae1-4a28-4bb9-b
 
 https://github.com/xqsadness/SwiftUIDesigns/assets/81242756/b8777435-5dd1-42c7-a59b-a43deedb8efe
 
+<a href="https://github.com/xqsadness/SwiftUIDesigns/tree/main/SwiftUIDesigns/Core/QRCode/View" > QR code generator and scanner (Xcode 14+ , IOS 16+)</a>
+
+<p align="left">
+  <img src="https://github.com/xqsadness/SwiftUIDesigns/assets/81242756/aa3849ba-a054-4fd1-a8e1-d3cc468af809" width="300" height="630">
+  <img src="https://github.com/xqsadness/SwiftUIDesigns/assets/81242756/1334fca8-17de-4055-866a-5784868444cc" width="300" height="630">
+</p>
