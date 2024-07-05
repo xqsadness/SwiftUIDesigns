@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD031A3D2C378AE800BDD16C /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD031A3C2C378AE800BDD16C /* QRCodeView.swift */; };
+		DD031A412C37934300BDD16C /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD031A402C37934300BDD16C /* ScannerView.swift */; };
 		DD2B0F532C1BEACF005C6BAA /* PixelsImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2B0F522C1BEACF005C6BAA /* PixelsImage.swift */; };
 		DD46ED512C056955009D4CF7 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46ED502C056955009D4CF7 /* LaunchScreenView.swift */; };
 		DD46ED532C058D0C009D4CF7 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46ED522C058D0C009D4CF7 /* OnboardingView.swift */; };
+		DD5DDCE62C37A19300AC77D1 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5DDCE52C37A19300AC77D1 /* CameraView.swift */; };
+		DD5DDCE82C37A96300AC77D1 /* QRScannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5DDCE72C37A96300AC77D1 /* QRScannerDelegate.swift */; };
 		DD6FEB662C06C25700B7D5E4 /* PhotosAppTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6FEB652C06C25700B7D5E4 /* PhotosAppTransitionView.swift */; };
 		DD6FEB6B2C06C2DC00B7D5E4 /* ItemPhotoTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6FEB6A2C06C2DC00B7D5E4 /* ItemPhotoTransition.swift */; };
 		DD6FEB6D2C06C42300B7D5E4 /* UICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6FEB6C2C06C42300B7D5E4 /* UICoordinator.swift */; };
@@ -30,9 +34,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD031A3C2C378AE800BDD16C /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
+		DD031A402C37934300BDD16C /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 		DD2B0F522C1BEACF005C6BAA /* PixelsImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelsImage.swift; sourceTree = "<group>"; };
 		DD46ED502C056955009D4CF7 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		DD46ED522C058D0C009D4CF7 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		DD5DDCE52C37A19300AC77D1 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		DD5DDCE72C37A96300AC77D1 /* QRScannerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerDelegate.swift; sourceTree = "<group>"; };
 		DD6FEB652C06C25700B7D5E4 /* PhotosAppTransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosAppTransitionView.swift; sourceTree = "<group>"; };
 		DD6FEB6A2C06C2DC00B7D5E4 /* ItemPhotoTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPhotoTransition.swift; sourceTree = "<group>"; };
 		DD6FEB6C2C06C42300B7D5E4 /* UICoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICoordinator.swift; sourceTree = "<group>"; };
@@ -64,6 +72,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD031A3B2C378AA700BDD16C /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				DD031A3E2C37931D00BDD16C /* Model */,
+				DD031A3F2C37932900BDD16C /* View */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+		DD031A3E2C37931D00BDD16C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DD031A3F2C37932900BDD16C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD031A3C2C378AE800BDD16C /* QRCodeView.swift */,
+				DD031A402C37934300BDD16C /* ScannerView.swift */,
+				DD5DDCE52C37A19300AC77D1 /* CameraView.swift */,
+				DD5DDCE72C37A96300AC77D1 /* QRScannerDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DD2B0F4F2C1BEA8E005C6BAA /* PixelArtImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +248,7 @@
 				DD46ED4F2C05692E009D4CF7 /* LaunchScreenText */,
 				DDDFD2FC2C0420DD0072FFD0 /* ImageGalleryApp */,
 				DD6FEB642C06C23F00B7D5E4 /* PhotosAppTransition */,
+				DD031A3B2C378AA700BDD16C /* QRCode */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -314,10 +350,14 @@
 				DD46ED532C058D0C009D4CF7 /* OnboardingView.swift in Sources */,
 				DD6FEB6B2C06C2DC00B7D5E4 /* ItemPhotoTransition.swift in Sources */,
 				DDE3D3512C0590C000E6EEE9 /* RootAppView.swift in Sources */,
+				DD031A412C37934300BDD16C /* ScannerView.swift in Sources */,
+				DD031A3D2C378AE800BDD16C /* QRCodeView.swift in Sources */,
 				DDDEE8122C0493F4006D0D4A /* ImagePicker.swift in Sources */,
 				DDDEE80F2C047064006D0D4A /* SelectedStack.swift in Sources */,
 				DD6FEB712C06CA3600B7D5E4 /* HeroLayer.swift in Sources */,
 				DD6FEB662C06C25700B7D5E4 /* PhotosAppTransitionView.swift in Sources */,
+				DD5DDCE62C37A19300AC77D1 /* CameraView.swift in Sources */,
+				DD5DDCE82C37A96300AC77D1 /* QRScannerDelegate.swift in Sources */,
 				DDDFD2ED2C041F560072FFD0 /* SwiftUIDesignsApp.swift in Sources */,
 				DDDEE80A2C0469F6006D0D4A /* DataModel.swift in Sources */,
 				DD46ED512C056955009D4CF7 /* LaunchScreenView.swift in Sources */,
@@ -459,6 +499,7 @@
 				DEVELOPMENT_TEAM = 4BB9BFSL47;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need permission for camera";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need your permission to save images to your photos";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need permission";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -490,6 +531,7 @@
 				DEVELOPMENT_TEAM = 4BB9BFSL47;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need permission for camera";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need your permission to save images to your photos";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need permission";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

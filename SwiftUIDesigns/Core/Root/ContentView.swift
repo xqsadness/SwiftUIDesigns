@@ -21,8 +21,13 @@ struct ContentView: View {
                 
                 navigationScreen("Pixels Art Image") {
                     PixelsImage()
+                } 
+                
+                navigationScreen("QR Code") {
+                    HomeQRCodeView()
                 }
             }
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
     
