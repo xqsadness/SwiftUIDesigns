@@ -10,24 +10,33 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView{
-            List{
-                navigationScreen("Photos App Transition") {
-                    PhotosAppTransitionView()
+            VStack{
+                Text("Welcome")
+                    .frame(maxWidth: .infinity)
+                
+                List{
+                    navigationScreen("Photos App Transition") {
+                        PhotosAppTransitionView()
+                    }
+                    
+                    navigationScreen("Image Gallery") {
+                        ImageGalleryView()
+                    }
+                    
+                    navigationScreen("Pixels Art Image") {
+                        PixelsImage()
+                    }
+                    
+                    navigationScreen("QR Code") {
+                        HomeQRCodeView()
+                    }
+                    
+                    navigationScreen("Login Transition") {
+                        LoginTransitionView()
+                    }
                 }
-                
-                navigationScreen("Image Gallery") {
-                    ImageGalleryView()
-                }  
-                
-                navigationScreen("Pixels Art Image") {
-                    PixelsImage()
-                } 
-                
-                navigationScreen("QR Code") {
-                    HomeQRCodeView()
-                }
+                .navigationBarTitleDisplayMode(.inline)
             }
-            .navigationBarTitleDisplayMode(.inline)
         }
     }
     

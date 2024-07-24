@@ -21,6 +21,7 @@
 		DD6FEB712C06CA3600B7D5E4 /* HeroLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6FEB702C06CA3600B7D5E4 /* HeroLayer.swift */; };
 		DD6FEB732C06CA7200B7D5E4 /* HeroKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6FEB722C06CA7200B7D5E4 /* HeroKey.swift */; };
 		DD6FEB762C071AFC00B7D5E4 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6FEB752C071AFC00B7D5E4 /* View+Extension.swift */; };
+		DDB6E7BD2C50A85D00DC0066 /* LoginTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB6E7BC2C50A85D00DC0066 /* LoginTransitionView.swift */; };
 		DDDEE80A2C0469F6006D0D4A /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDEE8092C0469F6006D0D4A /* DataModel.swift */; };
 		DDDEE80D2C047043006D0D4A /* ImageStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDEE80C2C047043006D0D4A /* ImageStack.swift */; };
 		DDDEE80F2C047064006D0D4A /* SelectedStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDEE80E2C047064006D0D4A /* SelectedStack.swift */; };
@@ -48,6 +49,7 @@
 		DD6FEB702C06CA3600B7D5E4 /* HeroLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroLayer.swift; sourceTree = "<group>"; };
 		DD6FEB722C06CA7200B7D5E4 /* HeroKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroKey.swift; sourceTree = "<group>"; };
 		DD6FEB752C071AFC00B7D5E4 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		DDB6E7BC2C50A85D00DC0066 /* LoginTransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTransitionView.swift; sourceTree = "<group>"; };
 		DDDEE8092C0469F6006D0D4A /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		DDDEE80C2C047043006D0D4A /* ImageStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStack.swift; sourceTree = "<group>"; };
 		DDDEE80E2C047064006D0D4A /* SelectedStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedStack.swift; sourceTree = "<group>"; };
@@ -161,6 +163,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		DDB6E7BB2C50A83E00DC0066 /* LoginTransition */ = {
+			isa = PBXGroup;
+			children = (
+				DDB6E7BC2C50A85D00DC0066 /* LoginTransitionView.swift */,
+			);
+			path = LoginTransition;
+			sourceTree = "<group>";
+		};
 		DDDEE8062C0469D1006D0D4A /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +253,7 @@
 		DDDFD2FD2C0420EA0072FFD0 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				DDB6E7BB2C50A83E00DC0066 /* LoginTransition */,
 				DDDFD2FE2C0420F60072FFD0 /* Root */,
 				DD2B0F4F2C1BEA8E005C6BAA /* PixelArtImage */,
 				DD46ED4F2C05692E009D4CF7 /* LaunchScreenText */,
@@ -357,6 +368,7 @@
 				DD6FEB712C06CA3600B7D5E4 /* HeroLayer.swift in Sources */,
 				DD6FEB662C06C25700B7D5E4 /* PhotosAppTransitionView.swift in Sources */,
 				DD5DDCE62C37A19300AC77D1 /* CameraView.swift in Sources */,
+				DDB6E7BD2C50A85D00DC0066 /* LoginTransitionView.swift in Sources */,
 				DD5DDCE82C37A96300AC77D1 /* QRScannerDelegate.swift in Sources */,
 				DDDFD2ED2C041F560072FFD0 /* SwiftUIDesignsApp.swift in Sources */,
 				DDDEE80A2C0469F6006D0D4A /* DataModel.swift in Sources */,
