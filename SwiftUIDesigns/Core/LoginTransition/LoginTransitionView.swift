@@ -8,32 +8,37 @@
 import SwiftUI
 
 struct LoginTransitionView: View {
+    
     @State private var shows = false
+    @State private var bgColor = Color.red
+
     var body: some View {
-        ZStack {
+        ZStack(alignment: .topTrailing){
             Color.gray.opacity(0.2).ignoresSafeArea()
-            
+                        
             VStack(spacing: 0) {
+                ColorPicker("", selection: $bgColor)
+
                 Group {
                     if shows {
-                        SignUpView()
+                        SignUpView(bgColor: $bgColor)
                             .transition(.move(edge: .bottom))
                         
-                        WelcomeBackView() {
+                        WelcomeBackView(bgColor: $bgColor) {
                             withAnimation{
                                 shows.toggle()
                             }
                         }
                         .transition(.move(edge: .top))
                     } else {
-                        WelcomeView() {
+                        WelcomeView(bgColor: $bgColor) {
                             withAnimation {
                                 shows.toggle()
                             }
                         }
                         .transition(.move(edge: .bottom))
                         
-                        SignInView()
+                        SignInView(bgColor: $bgColor)
                             .transition(.move(edge: .top))
                     }
                 }
@@ -49,11 +54,12 @@ struct LoginTransitionView: View {
 }
 
 struct WelcomeView: View {
+    @Binding var bgColor: Color
     var action: () -> Void
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
-                .fill(.red)
+                .fill(bgColor)
                 .frame(height: 350)
             
             VStack {
@@ -89,11 +95,12 @@ struct WelcomeView: View {
 }
 
 struct WelcomeBackView: View {
+    @Binding var bgColor: Color
     var action: () -> Void
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
-                .fill(.red)
+                .fill(bgColor)
                 .frame(height: 350)
             
             VStack {
@@ -132,6 +139,7 @@ struct SignInView: View {
     var socialMediaIcon = ["facebook", "google", "linkedin", "apple"]
     @State var email = ""
     @State var password = ""
+    @Binding var bgColor: Color
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
@@ -193,7 +201,7 @@ struct SignInView: View {
                 } label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 25)
-                            .fill(.red)
+                            .fill(bgColor)
                             .frame(width: 160, height: 35)
                         
                         Text("SIGN IN")
@@ -212,6 +220,7 @@ struct SignUpView: View {
     @State var name = ""
     @State var email = ""
     @State var password = ""
+    @Binding var bgColor: Color
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
@@ -283,7 +292,7 @@ struct SignUpView: View {
                 } label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 25)
-                            .fill(.red)
+                            .fill(bgColor)
                             .frame(width: 160, height: 35)
                         
                         Text("SIGN UP")
