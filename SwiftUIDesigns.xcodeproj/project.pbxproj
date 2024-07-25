@@ -14,6 +14,8 @@
 		DD46ED532C058D0C009D4CF7 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46ED522C058D0C009D4CF7 /* OnboardingView.swift */; };
 		DD5DDCE62C37A19300AC77D1 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5DDCE52C37A19300AC77D1 /* CameraView.swift */; };
 		DD5DDCE82C37A96300AC77D1 /* QRScannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5DDCE72C37A96300AC77D1 /* QRScannerDelegate.swift */; };
+		DD6CEC642C523E640073085B /* PasswordCheckField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6CEC632C523E640073085B /* PasswordCheckField.swift */; };
+		DD6CEC662C5249360073085B /* ForgotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6CEC652C5249360073085B /* ForgotView.swift */; };
 		DD6FEB662C06C25700B7D5E4 /* PhotosAppTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6FEB652C06C25700B7D5E4 /* PhotosAppTransitionView.swift */; };
 		DD6FEB6B2C06C2DC00B7D5E4 /* ItemPhotoTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6FEB6A2C06C2DC00B7D5E4 /* ItemPhotoTransition.swift */; };
 		DD6FEB6D2C06C42300B7D5E4 /* UICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6FEB6C2C06C42300B7D5E4 /* UICoordinator.swift */; };
@@ -22,6 +24,10 @@
 		DD6FEB732C06CA7200B7D5E4 /* HeroKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6FEB722C06CA7200B7D5E4 /* HeroKey.swift */; };
 		DD6FEB762C071AFC00B7D5E4 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6FEB752C071AFC00B7D5E4 /* View+Extension.swift */; };
 		DDB6E7BD2C50A85D00DC0066 /* LoginTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB6E7BC2C50A85D00DC0066 /* LoginTransitionView.swift */; };
+		DDB6E7C02C50EF8D00DC0066 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB6E7BF2C50EF8D00DC0066 /* SignUpView.swift */; };
+		DDB6E7C22C50F05C00DC0066 /* SignIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB6E7C12C50F05C00DC0066 /* SignIN.swift */; };
+		DDB6E7C42C50F08300DC0066 /* SignInUpHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB6E7C32C50F08300DC0066 /* SignInUpHomeView.swift */; };
+		DDB6E7C62C50FC7A00DC0066 /* PasswordTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB6E7C52C50FC7A00DC0066 /* PasswordTF.swift */; };
 		DDDEE80A2C0469F6006D0D4A /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDEE8092C0469F6006D0D4A /* DataModel.swift */; };
 		DDDEE80D2C047043006D0D4A /* ImageStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDEE80C2C047043006D0D4A /* ImageStack.swift */; };
 		DDDEE80F2C047064006D0D4A /* SelectedStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDEE80E2C047064006D0D4A /* SelectedStack.swift */; };
@@ -42,6 +48,8 @@
 		DD46ED522C058D0C009D4CF7 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		DD5DDCE52C37A19300AC77D1 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		DD5DDCE72C37A96300AC77D1 /* QRScannerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerDelegate.swift; sourceTree = "<group>"; };
+		DD6CEC632C523E640073085B /* PasswordCheckField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCheckField.swift; sourceTree = "<group>"; };
+		DD6CEC652C5249360073085B /* ForgotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotView.swift; sourceTree = "<group>"; };
 		DD6FEB652C06C25700B7D5E4 /* PhotosAppTransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosAppTransitionView.swift; sourceTree = "<group>"; };
 		DD6FEB6A2C06C2DC00B7D5E4 /* ItemPhotoTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPhotoTransition.swift; sourceTree = "<group>"; };
 		DD6FEB6C2C06C42300B7D5E4 /* UICoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICoordinator.swift; sourceTree = "<group>"; };
@@ -50,6 +58,10 @@
 		DD6FEB722C06CA7200B7D5E4 /* HeroKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroKey.swift; sourceTree = "<group>"; };
 		DD6FEB752C071AFC00B7D5E4 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		DDB6E7BC2C50A85D00DC0066 /* LoginTransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTransitionView.swift; sourceTree = "<group>"; };
+		DDB6E7BF2C50EF8D00DC0066 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		DDB6E7C12C50F05C00DC0066 /* SignIN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIN.swift; sourceTree = "<group>"; };
+		DDB6E7C32C50F08300DC0066 /* SignInUpHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUpHomeView.swift; sourceTree = "<group>"; };
+		DDB6E7C52C50FC7A00DC0066 /* PasswordTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTF.swift; sourceTree = "<group>"; };
 		DDDEE8092C0469F6006D0D4A /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		DDDEE80C2C047043006D0D4A /* ImageStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStack.swift; sourceTree = "<group>"; };
 		DDDEE80E2C047064006D0D4A /* SelectedStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedStack.swift; sourceTree = "<group>"; };
@@ -171,6 +183,19 @@
 			path = LoginTransition;
 			sourceTree = "<group>";
 		};
+		DDB6E7BE2C50EF5900DC0066 /* LoginAndSignUpAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				DDB6E7C32C50F08300DC0066 /* SignInUpHomeView.swift */,
+				DDB6E7BF2C50EF8D00DC0066 /* SignUpView.swift */,
+				DDB6E7C12C50F05C00DC0066 /* SignIN.swift */,
+				DDB6E7C52C50FC7A00DC0066 /* PasswordTF.swift */,
+				DD6CEC632C523E640073085B /* PasswordCheckField.swift */,
+				DD6CEC652C5249360073085B /* ForgotView.swift */,
+			);
+			path = LoginAndSignUpAnimation;
+			sourceTree = "<group>";
+		};
 		DDDEE8062C0469D1006D0D4A /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,8 +278,9 @@
 		DDDFD2FD2C0420EA0072FFD0 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				DDB6E7BB2C50A83E00DC0066 /* LoginTransition */,
 				DDDFD2FE2C0420F60072FFD0 /* Root */,
+				DDB6E7BE2C50EF5900DC0066 /* LoginAndSignUpAnimation */,
+				DDB6E7BB2C50A83E00DC0066 /* LoginTransition */,
 				DD2B0F4F2C1BEA8E005C6BAA /* PixelArtImage */,
 				DD46ED4F2C05692E009D4CF7 /* LaunchScreenText */,
 				DDDFD2FC2C0420DD0072FFD0 /* ImageGalleryApp */,
@@ -354,10 +380,14 @@
 			files = (
 				DDDFD3012C0421180072FFD0 /* ImageGalleryView.swift in Sources */,
 				DDDEE80D2C047043006D0D4A /* ImageStack.swift in Sources */,
+				DDB6E7C22C50F05C00DC0066 /* SignIN.swift in Sources */,
 				DD6FEB6F2C06C6E900B7D5E4 /* DetailPhotosView.swift in Sources */,
 				DD6FEB762C071AFC00B7D5E4 /* View+Extension.swift in Sources */,
+				DD6CEC662C5249360073085B /* ForgotView.swift in Sources */,
+				DDB6E7C02C50EF8D00DC0066 /* SignUpView.swift in Sources */,
 				DD6FEB6D2C06C42300B7D5E4 /* UICoordinator.swift in Sources */,
 				DDDFD2EF2C041F560072FFD0 /* ContentView.swift in Sources */,
+				DD6CEC642C523E640073085B /* PasswordCheckField.swift in Sources */,
 				DD46ED532C058D0C009D4CF7 /* OnboardingView.swift in Sources */,
 				DD6FEB6B2C06C2DC00B7D5E4 /* ItemPhotoTransition.swift in Sources */,
 				DDE3D3512C0590C000E6EEE9 /* RootAppView.swift in Sources */,
@@ -368,8 +398,10 @@
 				DD6FEB712C06CA3600B7D5E4 /* HeroLayer.swift in Sources */,
 				DD6FEB662C06C25700B7D5E4 /* PhotosAppTransitionView.swift in Sources */,
 				DD5DDCE62C37A19300AC77D1 /* CameraView.swift in Sources */,
+				DDB6E7C62C50FC7A00DC0066 /* PasswordTF.swift in Sources */,
 				DDB6E7BD2C50A85D00DC0066 /* LoginTransitionView.swift in Sources */,
 				DD5DDCE82C37A96300AC77D1 /* QRScannerDelegate.swift in Sources */,
+				DDB6E7C42C50F08300DC0066 /* SignInUpHomeView.swift in Sources */,
 				DDDFD2ED2C041F560072FFD0 /* SwiftUIDesignsApp.swift in Sources */,
 				DDDEE80A2C0469F6006D0D4A /* DataModel.swift in Sources */,
 				DD46ED512C056955009D4CF7 /* LaunchScreenView.swift in Sources */,

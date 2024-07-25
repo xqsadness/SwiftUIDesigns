@@ -34,6 +34,10 @@ struct ContentView: View {
                     navigationScreen("Login Transition") {
                         LoginTransitionView()
                     }
+                    
+                    navigationScreen("SignInUp Animation") {
+                        SignInUpHomeView()
+                    }
                 }
                 .navigationBarTitleDisplayMode(.inline)
             }
