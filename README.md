@@ -22,3 +22,8 @@ https://github.com/xqsadness/SwiftUIDesigns/assets/81242756/b8777435-5dd1-42c7-a
 <a href="https://github.com/xqsadness/SwiftUIDesigns/tree/main/SwiftUIDesigns/Core/LoginTransition" > Login Transition (Xcode 14+ , IOS 16+)</a>
 
 https://github.com/user-attachments/assets/41b2860c-695d-4a29-b060-5f0e8dd132e0
+
+<a href="https://github.com/xqsadness/SwiftUIDesigns/tree/main/SwiftUIDesigns/Core/LoginAndSignUpAnimation" > SignInUp Animation (Xcode 14+ , IOS 16+)</a>
+
+https://github.com/user-attachments/assets/7c78d202-7015-4aa8-97f9-c4f273b53b6f
+
