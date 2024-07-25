@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PasswordCheckField: View {
-    @State var text = "aksljbndkajsbndkasjbndkabjsdjbaskdjbnaskjbdaksjbdakjsbdkasjbdkajbsdkjabsdkjabskdbaskjbdaksjbdajksbdajksbdkjasbdkajsbnd"
+    @State var text = ""
     @FocusState var isActive
     @State var progress: CGFloat = 0
     @State var checkMinChars = false
@@ -48,7 +48,7 @@ struct PasswordCheckField: View {
                         .frame(maxWidth: .infinity)
                         .frame(height: 55)
                         .focused($isActive)
-                        .padding(.trailing, 40)
+                        .padding(.trailing, 42)
                         .background(.gray.opacity(0.3), in: .rect(cornerRadius: 16))
                         .opacity(showPassword ? 0 : 1)
                     
@@ -57,7 +57,7 @@ struct PasswordCheckField: View {
                         .frame(maxWidth: .infinity)
                         .frame(height: 55)
                         .focused($isActive)
-                        .padding(.trailing, 40)
+                        .padding(.trailing, 42)
                         .background(.gray.opacity(0.3), in: .rect(cornerRadius: 16))
                         .opacity(showPassword ? 1 : 0)
                 }
@@ -110,7 +110,7 @@ struct CheckText: View {
                 .contentTransition(.symbolEffect)
             Text(text)
         }
-        .foregroundColor (check ? .white : .secondary)
+        .foregroundColor(check ? .text : .secondary)
     }
 }
 

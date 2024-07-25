@@ -150,7 +150,7 @@ struct SignButton: View {
             
         }label: {
             Text(title)
-                .foregroundStyle(.black)
+                .foregroundStyle(.bgr)
                 .font(.title2).bold()
                 .frame(maxWidth: .infinity)
                 .frame(height: 55)
