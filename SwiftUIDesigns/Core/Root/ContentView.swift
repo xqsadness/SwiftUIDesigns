@@ -42,8 +42,12 @@ struct ContentView: View {
                         SignInUpHomeView()
                     }
                     
+                    navigationScreen("Custom Tabbar 1") {
+                        CustomTabbar1()
+                    }
+                    
                     Text("Banner Moview")
-                        .frame(maxWidth: .infinity)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                         .contentShape(.rect)
                         .onTapGesture {
                             showFullBannerMoview.toggle()

@@ -10,6 +10,7 @@
 		DD031A3D2C378AE800BDD16C /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD031A3C2C378AE800BDD16C /* QRCodeView.swift */; };
 		DD031A412C37934300BDD16C /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD031A402C37934300BDD16C /* ScannerView.swift */; };
 		DD116EEA2D155B780034B45F /* MovieBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD116EE92D155B780034B45F /* MovieBanner.swift */; };
+		DD116EED2D1565E70034B45F /* CustomTabbar1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD116EEC2D1565E70034B45F /* CustomTabbar1.swift */; };
 		DD2B0F532C1BEACF005C6BAA /* PixelsImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2B0F522C1BEACF005C6BAA /* PixelsImage.swift */; };
 		DD46ED512C056955009D4CF7 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46ED502C056955009D4CF7 /* LaunchScreenView.swift */; };
 		DD46ED532C058D0C009D4CF7 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46ED522C058D0C009D4CF7 /* OnboardingView.swift */; };
@@ -45,6 +46,7 @@
 		DD031A3C2C378AE800BDD16C /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
 		DD031A402C37934300BDD16C /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 		DD116EE92D155B780034B45F /* MovieBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBanner.swift; sourceTree = "<group>"; };
+		DD116EEC2D1565E70034B45F /* CustomTabbar1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbar1.swift; sourceTree = "<group>"; };
 		DD2B0F522C1BEACF005C6BAA /* PixelsImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelsImage.swift; sourceTree = "<group>"; };
 		DD46ED502C056955009D4CF7 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		DD46ED522C058D0C009D4CF7 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -121,6 +123,14 @@
 				DD116EE92D155B780034B45F /* MovieBanner.swift */,
 			);
 			path = MovieBanner;
+			sourceTree = "<group>";
+		};
+		DD116EEB2D1565D80034B45F /* CustomTabbar1 */ = {
+			isa = PBXGroup;
+			children = (
+				DD116EEC2D1565E70034B45F /* CustomTabbar1.swift */,
+			);
+			path = CustomTabbar1;
 			sourceTree = "<group>";
 		};
 		DD2B0F4F2C1BEA8E005C6BAA /* PixelArtImage */ = {
@@ -288,8 +298,9 @@
 		DDDFD2FD2C0420EA0072FFD0 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				DD116EE82D155B540034B45F /* MovieBanner */,
 				DDDFD2FE2C0420F60072FFD0 /* Root */,
+				DD116EEB2D1565D80034B45F /* CustomTabbar1 */,
+				DD116EE82D155B540034B45F /* MovieBanner */,
 				DDB6E7BE2C50EF5900DC0066 /* LoginAndSignUpAnimation */,
 				DDB6E7BB2C50A83E00DC0066 /* LoginTransition */,
 				DD2B0F4F2C1BEA8E005C6BAA /* PixelArtImage */,
@@ -413,6 +424,7 @@
 				DDB6E7BD2C50A85D00DC0066 /* LoginTransitionView.swift in Sources */,
 				DD5DDCE82C37A96300AC77D1 /* QRScannerDelegate.swift in Sources */,
 				DDB6E7C42C50F08300DC0066 /* SignInUpHomeView.swift in Sources */,
+				DD116EED2D1565E70034B45F /* CustomTabbar1.swift in Sources */,
 				DDDFD2ED2C041F560072FFD0 /* SwiftUIDesignsApp.swift in Sources */,
 				DDDEE80A2C0469F6006D0D4A /* DataModel.swift in Sources */,
 				DD116EEA2D155B780034B45F /* MovieBanner.swift in Sources */,
