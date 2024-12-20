@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var showFullBannerMoview = false
+    
     var body: some View {
         NavigationView{
             VStack{
@@ -38,8 +41,18 @@ struct ContentView: View {
                     navigationScreen("SignInUp Animation") {
                         SignInUpHomeView()
                     }
+                    
+                    Text("Banner Moview")
+                        .frame(maxWidth: .infinity)
+                        .contentShape(.rect)
+                        .onTapGesture {
+                            showFullBannerMoview.toggle()
+                        }
                 }
                 .navigationBarTitleDisplayMode(.inline)
+            }
+            .fullScreenCover(isPresented: $showFullBannerMoview) {
+                MovieBannerView()
             }
         }
     }

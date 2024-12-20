@@ -13,6 +13,7 @@ struct SwiftUIDesignsApp: App {
     var body: some Scene {
         WindowGroup {
             RootAppView()
+                .preferredColorScheme(.light)
         }
     }
 }
